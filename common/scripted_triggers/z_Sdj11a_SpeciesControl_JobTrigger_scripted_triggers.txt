@@ -1,0 +1,154 @@
+
+########################################################
+########################################################
+#####                                              #####
+#####    Species Discrimination on Job             #####
+#####                                              #####
+#####    scripted_trigggers written in pop_jobs    #####
+#####                                              #####
+########################################################
+########################################################
+#
+# For both of original Species Discrimination on Job and Job Manager
+#
+
+
+#################################
+###  Original Trigger of Mod  ###
+#################################
+#
+# Scope: this = pop
+#
+
+SdjTriggerBannedFromRank3_Regular = {
+	owner = { SdjTriggerAvailableCountryRegular = yes }
+	NOT = { planet = { has_planet_flag = SdjFlagDeregulationOfJob@prev.owner } }
+	SdjTriggerBannedFromRank3_Common = yes
+}
+
+SdjTriggerBannedFromRank2_Regular = {
+	owner = { SdjTriggerAvailableCountryRegular = yes }
+	NOT = { planet = { has_planet_flag = SdjFlagDeregulationOfJob@prev.owner } }
+	SdjTriggerBannedFromRank2_Common = yes
+}
+
+SdjTriggerBannedFromRank1_Regular = {
+	owner = { SdjTriggerAvailableCountryRegular = yes }
+	NOT = { planet = { has_planet_flag = SdjFlagDeregulationOfJob@prev.owner } }
+	SdjTriggerBannedFromRank1_Common = yes
+}
+
+
+SdjTriggerBannedFromRank2_Gestalt = {
+	owner = { SdjTriggerAvailableCountryGestalt = yes }
+	NOT = { planet = { has_planet_flag = SdjFlagDeregulationOfJob@prev.owner } }
+	SdjTriggerBannedFromRank2_Common = yes
+}
+
+SdjTriggerBannedFromRank1_Gestalt = {
+	owner = { SdjTriggerAvailableCountryGestalt = yes }
+	NOT = { planet = { has_planet_flag = SdjFlagDeregulationOfJob@prev.owner } }
+	SdjTriggerBannedFromRank1_Common = yes
+}
+
+
+
+
+### Scope: this = pop, Used for both of menu and actual effects
+SdjTriggerBannedFromRank3_Common = {
+	species = {
+		OR = {
+			AND = {
+				has_species_flag = SdjFlagForbiddenSeparately_@prev.owner
+				has_species_flag = SdjFlagForbiddenRank3_@prev.owner
+			}
+			AND = {
+				NOT = { has_species_flag = SdjFlagForbiddenSeparately_@prev.owner }
+				prev.owner = { has_country_flag = SdjFlagDefaultForbidRank3 }
+			}
+		}
+	}
+}
+
+SdjTriggerBannedFromRank2_Common = {
+	species = {
+		OR = {
+			AND = {
+				has_species_flag = SdjFlagForbiddenSeparately_@prev.owner
+				has_species_flag = SdjFlagForbiddenRank2_@prev.owner
+			}
+			AND = {
+				NOT = { has_species_flag = SdjFlagForbiddenSeparately_@prev.owner }
+				prev.owner = { has_country_flag = SdjFlagDefaultForbidRank2 }
+			}
+		}
+	}
+}
+
+SdjTriggerBannedFromRank1_Common = {
+	species = {
+		OR = {
+			AND = {
+				has_species_flag = SdjFlagForbiddenSeparately_@prev.owner
+				has_species_flag = SdjFlagForbiddenRank1_@prev.owner
+			}
+			AND = {
+				NOT = { has_species_flag = SdjFlagForbiddenSeparately_@prev.owner }
+				prev.owner = { has_country_flag = SdjFlagDefaultForbidRank1 }
+			}
+		}
+	}
+}
+
+SdjTriggerBannedFromAll_Simple = {
+	species = {
+		OR = {
+			AND = {
+				has_species_flag = SdjFlagForbiddenSeparately_@prev.owner
+				OR = {
+					has_species_flag = SdjFlagForbiddenRank3_@prev.owner
+					SdjTriggerAvailableCountryGestalt = yes
+				}
+				has_species_flag = SdjFlagForbiddenRank2_@prev.owner
+				has_species_flag = SdjFlagForbiddenRank1_@prev.owner
+			}
+			AND = {
+				NOT = { has_species_flag = SdjFlagForbiddenSeparately_@prev.owner }
+				prev.owner = {
+					OR = {
+						has_country_flag = SdjFlagDefaultForbidRank3
+						SdjTriggerAvailableCountryGestalt = yes
+					}
+					has_country_flag = SdjFlagDefaultForbidRank2
+					has_country_flag = SdjFlagDefaultForbidRank1
+				}
+			}
+		}
+	}
+}
+
+
+######################################
+###  Original Trigger of this Mod  ###
+######################################
+
+### For Regular Pops: Written in 'Overwrite Trigger of Vanilla'
+SdjTriggerCheck_job_cat_ruler = { always = yes }
+SdjTriggerCheck_job_cat_specialist = { always = yes }
+SdjTriggerCheck_job_cat_worker = { always = yes }
+SdjTriggerCheck_job_cat_purge = { always = yes }
+
+### For Drone Pops
+SdjTriggerCheck_job_cat_complex_drone = {
+	hidden_trigger = { NOT = { SdjTriggerBannedFromRank2_Gestalt = yes } }
+}
+
+SdjTriggerCheck_job_cat_simple_drone = {
+	hidden_trigger = { NOT = { SdjTriggerBannedFromRank1_Gestalt = yes } }
+}
+
+### For Criminal Pops
+SdjTriggerCheck_job_cat_criminal = { always = yes }
+SdjTriggerCheck_job_cat_deviant_drone = { always = yes }
+SdjTriggerCheck_job_cat_corrupt_drone = { always = yes }
+

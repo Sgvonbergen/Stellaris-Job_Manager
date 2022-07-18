@@ -1,0 +1,109 @@
+
+###############################################
+###############################################
+#####                                     #####
+#####    Species Discrimination on Job    #####
+#####    & Job Priority Manager           #####
+#####                                     #####
+#####    Global Constants                 #####
+#####                                     #####
+###############################################
+###############################################
+
+
+############################################################
+###  Relative Weight, and ID of Pop Categories and Jobs  ###
+############################################################
+
+@SdjConstWeightModifier1To2 =     1.25
+@SdjConstWeightModifier2To3 =     5
+@SdjConstWeightModifier3To4 =     2
+@SdjConstWeightModifier4To5 =    10
+@SdjConstWeightModifier5To6 =     2
+@SdjConstWeightModifier6To7 =     4
+@SdjConstWeightModifier7To8 =     1.25
+@SdjConstWeightModifier8To9 =    10
+@SdjConstWeightModifier0To1 =     0.8
+@SdjConstWeightModifier0To2 =     1
+@SdjConstWeightModifier0To3 =     5
+@SdjConstWeightModifier0To4 =    10
+@SdjConstWeightModifier0To5 =   100
+@SdjConstWeightModifier0To6 =   200
+@SdjConstWeightModifier0To7 =   800
+@SdjConstWeightModifier0To8 =  1000
+@SdjConstWeightModifier0To9 = 10000
+@SdjConstCatCode_pop_cat_ruler = 1001
+@SdjConstCatCode_pop_cat_specialist = 1002
+@SdjConstCatCode_pop_cat_worker = 1003
+@SdjConstCatCode_pop_cat_complex_drone = 1004
+@SdjConstCatCode_pop_cat_simple_drone = 1005
+@SdjConstCatCode_pop_cat_criminal = 1006
+@SdjConstCatCode_pop_cat_deviant_drone = 1007
+@SdjConstCatCode_pop_cat_corrupt_drone = 1008
+@SdjConstJobCode_job_criminal = 9
+@SdjConstJobCode_job_deviant_drone = 10
+@SdjConstJobCode_job_corrupt_drone = 11
+@SdjConstJobCode_job_head_researcher = 12
+@SdjConstJobCode_job_high_priest = 13
+@SdjConstJobCode_job_administrator = 14
+@SdjConstJobCode_job_noble = 15
+@SdjConstJobCode_job_merchant = 16
+@SdjConstJobCode_job_executive = 17
+@SdjConstJobCode_job_colonist = 18
+@SdjConstJobCode_job_researcher = 19
+@SdjConstJobCode_job_priest = 20
+@SdjConstJobCode_job_foundry = 21
+@SdjConstJobCode_job_enforcer = 22
+@SdjConstJobCode_job_telepath = 23
+@SdjConstJobCode_job_artisan = 24
+@SdjConstJobCode_job_entertainer = 25
+@SdjConstJobCode_job_duelist = 26
+@SdjConstJobCode_job_culture_worker = 27
+@SdjConstJobCode_job_chemist = 28
+@SdjConstJobCode_job_translucer = 29
+@SdjConstJobCode_job_gas_refiner = 30
+@SdjConstJobCode_job_roboticist = 31
+@SdjConstJobCode_job_healthcare = 32
+@SdjConstJobCode_job_manager = 33
+@SdjConstJobCode_job_clerk = 34
+@SdjConstJobCode_job_technician = 35
+@SdjConstJobCode_job_miner = 36
+@SdjConstJobCode_job_crystal_miner = 37
+@SdjConstJobCode_job_gas_extractor = 38
+@SdjConstJobCode_job_mote_harvester = 39
+@SdjConstJobCode_job_farmer = 40
+@SdjConstJobCode_job_soldier = 41
+@SdjConstJobCode_job_spawning_drone = 43
+@SdjConstJobCode_job_replicator = 44
+@SdjConstJobCode_job_coordinator = 45
+@SdjConstJobCode_job_synapse_drone = 46
+@SdjConstJobCode_job_brain_drone = 47
+@SdjConstJobCode_job_calculator = 48
+@SdjConstJobCode_job_artisan_drone = 49
+@SdjConstJobCode_job_fabricator = 50
+@SdjConstJobCode_job_alloy_drone = 51
+@SdjConstJobCode_job_chemist_drone = 52
+@SdjConstJobCode_job_translucer_drone = 53
+@SdjConstJobCode_job_gas_refiner_drone = 54
+@SdjConstJobCode_job_patrol_drone = 55
+@SdjConstJobCode_job_crystal_mining_drone = 56
+@SdjConstJobCode_job_mote_harvesting_drone = 57
+@SdjConstJobCode_job_gas_extraction_drone = 58
+@SdjConstJobCode_job_mining_drone = 59
+@SdjConstJobCode_job_agri_drone = 60
+@SdjConstJobCode_job_technician_drone = 61
+@SdjConstJobCode_job_maintenance_drone = 62
+@SdjConstJobCode_job_warrior_drone = 63
+@SdjConstJobCode_job_evaluator = 64
+@SdjConstJobCode_job_chronicle_drone = 65
+@SdjConstJobCode_job_underground_trade_worker = 67
+@SdjConstJobCode_job_underground_contact_drone = 68
+@SdjConstJobCode_job_dimensional_portal_researcher = 69
+@SdjConstJobCode_job_dimensional_portal_researcher_gestalt = 70
+@SdjConstJobCode_job_bureaucrat = 71
+@SdjConstJobCode_job_death_priest = 73
+@SdjConstJobCode_job_necromancer = 74
+@SdjConstJobCode_job_death_chronicler = 75
+@SdjConstJobCode_job_necro_apprentice = 76
+@SdjConstJobCode_job_preacher = 77
+@SdjConstJobCode_job_mortal_initiate = 78

@@ -1,0 +1,30 @@
+
+########################################################
+########################################################
+#####                                              #####
+#####    Species Discrimination on Job             #####
+#####                                              #####
+#####    scripted_trigggers written in pop_jobs    #####
+#####                                              #####
+########################################################
+########################################################
+#
+# For only Job Manager, but not original Species Discriminaion on Job
+# 
+
+
+######################################
+###  Original Trigger of this Mod  ###
+######################################
+
+### For Regular Pops: Written in 'Overwrite Trigger of Vanilla'
+SdjTriggerCheck_job_cat_ruler = {
+	NOT = { SdjTriggerBannedFromRank3_Regular = yes }
+}
+SdjTriggerCheck_job_cat_specialist = {
+	NOT = { SdjTriggerBannedFromRank2_Regular = yes }
+}
+SdjTriggerCheck_job_cat_worker = {
+	NOT = { SdjTriggerBannedFromRank1_Regular = yes }
+}
+
