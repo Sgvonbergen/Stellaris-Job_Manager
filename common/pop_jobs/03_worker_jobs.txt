@@ -1319,6 +1319,11 @@ scrap_miner = {
 	}
 
 	possible_precalc = can_fill_worker_job
+	possible = {
+		SdjTriggerCheck_job_cat_worker = yes
+        NOT = { SdjTriggerJobPriorityN_job_miner = yes }
+	}
+	}
 
 	resources = {
 		category = planet_miners
@@ -1375,6 +1380,7 @@ scrap_miner = {
 				}
 			}
 		}
+		
 	}
 }
 
