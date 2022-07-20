@@ -65,8 +65,8 @@ country_event = {
     }
     
     option = {
-        name = SdjOption_job_administrator.name
-        #custom_tooltip = SdjOption_job_administrator.tooltip
+        name = SdjOption_job_politician.name
+        #custom_tooltip = SdjOption_job_politician.tooltip
         trigger = {
             hidden_trigger = {
                 OR = {

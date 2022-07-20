@@ -45,7 +45,7 @@
 @SdjConstJobCode_job_corrupt_drone = 11
 @SdjConstJobCode_job_head_researcher = 12
 @SdjConstJobCode_job_high_priest = 13
-@SdjConstJobCode_job_administrator = 14
+@SdjConstJobCode_job_politician = 14
 @SdjConstJobCode_job_noble = 15
 @SdjConstJobCode_job_merchant = 16
 @SdjConstJobCode_job_executive = 17
@@ -107,3 +107,10 @@
 @SdjConstJobCode_job_necro_apprentice = 76
 @SdjConstJobCode_job_preacher = 77
 @SdjConstJobCode_job_mortal_initiate = 78
+
+# Added by Nocturion
+# @SdjConstJobCode_job_mortal_initiate = 78
+# @SdjConstJobCode_job_mortal_initiate = 78
+# @SdjConstJobCode_job_mortal_initiate = 78
+# @SdjConstJobCode_job_mortal_initiate = 78
+# @SdjConstJobCode_job_mortal_initiate = 78

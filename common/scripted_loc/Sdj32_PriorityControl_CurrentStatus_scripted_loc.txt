@@ -339,65 +339,65 @@ defined_text = {
     }
 }
 defined_text = {
-    name = SdjGetTextPriority_job_administrator
+    name = SdjGetTextPriority_job_politician
     text = {
-        trigger = { check_variable = { which = SdjVarJobPriority_job_administrator value = -1 } }
+        trigger = { check_variable = { which = SdjVarJobPriority_job_politician value = -1 } }
         localization_key = SdjTextPriorityN
     }
     text = {
-        trigger = { check_variable = { which = SdjVarJobPriority_job_administrator value = 0 } }
+        trigger = { check_variable = { which = SdjVarJobPriority_job_politician value = 0 } }
         localization_key = SdjTextPriorityDefault8
     }
     text = {
-        trigger = { check_variable = { which = SdjVarJobPriority_job_administrator value = 1 } }
+        trigger = { check_variable = { which = SdjVarJobPriority_job_politician value = 1 } }
         localization_key = SdjTextPriority1
     }
     text = {
-        trigger = { check_variable = { which = SdjVarJobPriority_job_administrator value = 2 } }
+        trigger = { check_variable = { which = SdjVarJobPriority_job_politician value = 2 } }
         localization_key = SdjTextPriority2
     }
     text = {
-        trigger = { check_variable = { which = SdjVarJobPriority_job_administrator value = 3 } }
+        trigger = { check_variable = { which = SdjVarJobPriority_job_politician value = 3 } }
         localization_key = SdjTextPriority3
     }
     text = {
-        trigger = { check_variable = { which = SdjVarJobPriority_job_administrator value = 4 } }
+        trigger = { check_variable = { which = SdjVarJobPriority_job_politician value = 4 } }
         localization_key = SdjTextPriority4
     }
     text = {
-        trigger = { check_variable = { which = SdjVarJobPriority_job_administrator value = 5 } }
+        trigger = { check_variable = { which = SdjVarJobPriority_job_politician value = 5 } }
         localization_key = SdjTextPriority5
     }
     text = {
-        trigger = { check_variable = { which = SdjVarJobPriority_job_administrator value = 6 } }
+        trigger = { check_variable = { which = SdjVarJobPriority_job_politician value = 6 } }
         localization_key = SdjTextPriority6
     }
     text = {
-        trigger = { check_variable = { which = SdjVarJobPriority_job_administrator value = 7 } }
+        trigger = { check_variable = { which = SdjVarJobPriority_job_politician value = 7 } }
         localization_key = SdjTextPriority7
     }
     text = {
-        trigger = { check_variable = { which = SdjVarJobPriority_job_administrator value = 8 } }
+        trigger = { check_variable = { which = SdjVarJobPriority_job_politician value = 8 } }
         localization_key = SdjTextPriority8
     }
     text = {
-        trigger = { check_variable = { which = SdjVarJobPriority_job_administrator value = 9 } }
+        trigger = { check_variable = { which = SdjVarJobPriority_job_politician value = 9 } }
         localization_key = SdjTextPriority9
     }
     text = {
         trigger = {
             NOR = {
-                check_variable = { which = SdjVarJobPriority_job_administrator value = -1 }
-                check_variable = { which = SdjVarJobPriority_job_administrator value = 0 }
-                check_variable = { which = SdjVarJobPriority_job_administrator value = 1 }
-                check_variable = { which = SdjVarJobPriority_job_administrator value = 2 }
-                check_variable = { which = SdjVarJobPriority_job_administrator value = 3 }
-                check_variable = { which = SdjVarJobPriority_job_administrator value = 4 }
-                check_variable = { which = SdjVarJobPriority_job_administrator value = 5 }
-                check_variable = { which = SdjVarJobPriority_job_administrator value = 6 }
-                check_variable = { which = SdjVarJobPriority_job_administrator value = 7 }
-                check_variable = { which = SdjVarJobPriority_job_administrator value = 8 }
-                check_variable = { which = SdjVarJobPriority_job_administrator value = 9 }
+                check_variable = { which = SdjVarJobPriority_job_politician value = -1 }
+                check_variable = { which = SdjVarJobPriority_job_politician value = 0 }
+                check_variable = { which = SdjVarJobPriority_job_politician value = 1 }
+                check_variable = { which = SdjVarJobPriority_job_politician value = 2 }
+                check_variable = { which = SdjVarJobPriority_job_politician value = 3 }
+                check_variable = { which = SdjVarJobPriority_job_politician value = 4 }
+                check_variable = { which = SdjVarJobPriority_job_politician value = 5 }
+                check_variable = { which = SdjVarJobPriority_job_politician value = 6 }
+                check_variable = { which = SdjVarJobPriority_job_politician value = 7 }
+                check_variable = { which = SdjVarJobPriority_job_politician value = 8 }
+                check_variable = { which = SdjVarJobPriority_job_politician value = 9 }
             }
         }
         localization_key = SdjTextPriorityError

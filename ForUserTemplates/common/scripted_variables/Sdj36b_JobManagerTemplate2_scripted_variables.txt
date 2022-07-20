@@ -32,7 +32,7 @@
 ### ruler
 @SdjConstTemplate2_job_head_researcher = 0
 @SdjConstTemplate2_job_high_priest = 0
-@SdjConstTemplate2_job_administrator = 0
+@SdjConstTemplate2_job_politician = 0
 @SdjConstTemplate2_job_noble = 0
 @SdjConstTemplate2_job_merchant = 0
 @SdjConstTemplate2_job_executive = 0

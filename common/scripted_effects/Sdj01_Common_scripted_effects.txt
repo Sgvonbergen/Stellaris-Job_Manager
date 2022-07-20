@@ -18,7 +18,7 @@
 SdjEffectBanSpeciesFrom_cat_ruler = {
     set_species_flag = SdjFlagForbidden_job_head_researcher_@prev
     set_species_flag = SdjFlagForbidden_job_high_priest_@prev
-    set_species_flag = SdjFlagForbidden_job_administrator_@prev
+    set_species_flag = SdjFlagForbidden_job_politician_@prev
     set_species_flag = SdjFlagForbidden_job_noble_@prev
     set_species_flag = SdjFlagForbidden_job_merchant_@prev
     set_species_flag = SdjFlagForbidden_job_executive_@prev
@@ -28,7 +28,7 @@ SdjEffectBanSpeciesFrom_cat_ruler = {
 SdjEffectUnbanSpeciesFrom_cat_ruler = {
     remove_species_flag = SdjFlagForbidden_job_head_researcher_@prev
     remove_species_flag = SdjFlagForbidden_job_high_priest_@prev
-    remove_species_flag = SdjFlagForbidden_job_administrator_@prev
+    remove_species_flag = SdjFlagForbidden_job_politician_@prev
     remove_species_flag = SdjFlagForbidden_job_noble_@prev
     remove_species_flag = SdjFlagForbidden_job_merchant_@prev
     remove_species_flag = SdjFlagForbidden_job_executive_@prev
@@ -244,9 +244,9 @@ SdjEffectSaveSpeciesJobRightAsTemplate1 = {
         set_country_flag = SdjFlagTemplate1_Forbidden_job_high_priest
     } else = { remove_country_flag = SdjFlagTemplate1_Forbidden_job_high_priest }
     if = {
-        limit = { prev = { has_species_flag = SdjFlagForbidden_job_administrator_@prev } }
-        set_country_flag = SdjFlagTemplate1_Forbidden_job_administrator
-    } else = { remove_country_flag = SdjFlagTemplate1_Forbidden_job_administrator }
+        limit = { prev = { has_species_flag = SdjFlagForbidden_job_politician_@prev } }
+        set_country_flag = SdjFlagTemplate1_Forbidden_job_politician
+    } else = { remove_country_flag = SdjFlagTemplate1_Forbidden_job_politician }
     if = {
         limit = { prev = { has_species_flag = SdjFlagForbidden_job_noble_@prev } }
         set_country_flag = SdjFlagTemplate1_Forbidden_job_noble
@@ -520,9 +520,9 @@ SdjEffectApplySpeciesJobRightFromTemplate1 = {
         set_species_flag = SdjFlagForbidden_job_high_priest_@prev
     } else = { remove_species_flag = SdjFlagForbidden_job_high_priest_@prev }
     if = {
-        limit = { prev = { has_country_flag = SdjFlagTemplate1_Forbidden_job_administrator } }
-        set_species_flag = SdjFlagForbidden_job_administrator_@prev
-    } else = { remove_species_flag = SdjFlagForbidden_job_administrator_@prev }
+        limit = { prev = { has_country_flag = SdjFlagTemplate1_Forbidden_job_politician } }
+        set_species_flag = SdjFlagForbidden_job_politician_@prev
+    } else = { remove_species_flag = SdjFlagForbidden_job_politician_@prev }
     if = {
         limit = { prev = { has_country_flag = SdjFlagTemplate1_Forbidden_job_noble } }
         set_species_flag = SdjFlagForbidden_job_noble_@prev
@@ -795,9 +795,9 @@ SdjEffectSaveSpeciesJobRightAsTemplate2 = {
         set_country_flag = SdjFlagTemplate2_Forbidden_job_high_priest
     } else = { remove_country_flag = SdjFlagTemplate2_Forbidden_job_high_priest }
     if = {
-        limit = { prev = { has_species_flag = SdjFlagForbidden_job_administrator_@prev } }
-        set_country_flag = SdjFlagTemplate2_Forbidden_job_administrator
-    } else = { remove_country_flag = SdjFlagTemplate2_Forbidden_job_administrator }
+        limit = { prev = { has_species_flag = SdjFlagForbidden_job_politician_@prev } }
+        set_country_flag = SdjFlagTemplate2_Forbidden_job_politician
+    } else = { remove_country_flag = SdjFlagTemplate2_Forbidden_job_politician }
     if = {
         limit = { prev = { has_species_flag = SdjFlagForbidden_job_noble_@prev } }
         set_country_flag = SdjFlagTemplate2_Forbidden_job_noble
@@ -1071,9 +1071,9 @@ SdjEffectApplySpeciesJobRightFromTemplate2 = {
         set_species_flag = SdjFlagForbidden_job_high_priest_@prev
     } else = { remove_species_flag = SdjFlagForbidden_job_high_priest_@prev }
     if = {
-        limit = { prev = { has_country_flag = SdjFlagTemplate2_Forbidden_job_administrator } }
-        set_species_flag = SdjFlagForbidden_job_administrator_@prev
-    } else = { remove_species_flag = SdjFlagForbidden_job_administrator_@prev }
+        limit = { prev = { has_country_flag = SdjFlagTemplate2_Forbidden_job_politician } }
+        set_species_flag = SdjFlagForbidden_job_politician_@prev
+    } else = { remove_species_flag = SdjFlagForbidden_job_politician_@prev }
     if = {
         limit = { prev = { has_country_flag = SdjFlagTemplate2_Forbidden_job_noble } }
         set_species_flag = SdjFlagForbidden_job_noble_@prev
@@ -1346,9 +1346,9 @@ SdjEffectSaveSpeciesJobRightAsTemplate3 = {
         set_country_flag = SdjFlagTemplate3_Forbidden_job_high_priest
     } else = { remove_country_flag = SdjFlagTemplate3_Forbidden_job_high_priest }
     if = {
-        limit = { prev = { has_species_flag = SdjFlagForbidden_job_administrator_@prev } }
-        set_country_flag = SdjFlagTemplate3_Forbidden_job_administrator
-    } else = { remove_country_flag = SdjFlagTemplate3_Forbidden_job_administrator }
+        limit = { prev = { has_species_flag = SdjFlagForbidden_job_politician_@prev } }
+        set_country_flag = SdjFlagTemplate3_Forbidden_job_politician
+    } else = { remove_country_flag = SdjFlagTemplate3_Forbidden_job_politician }
     if = {
         limit = { prev = { has_species_flag = SdjFlagForbidden_job_noble_@prev } }
         set_country_flag = SdjFlagTemplate3_Forbidden_job_noble
@@ -1622,9 +1622,9 @@ SdjEffectApplySpeciesJobRightFromTemplate3 = {
         set_species_flag = SdjFlagForbidden_job_high_priest_@prev
     } else = { remove_species_flag = SdjFlagForbidden_job_high_priest_@prev }
     if = {
-        limit = { prev = { has_country_flag = SdjFlagTemplate3_Forbidden_job_administrator } }
-        set_species_flag = SdjFlagForbidden_job_administrator_@prev
-    } else = { remove_species_flag = SdjFlagForbidden_job_administrator_@prev }
+        limit = { prev = { has_country_flag = SdjFlagTemplate3_Forbidden_job_politician } }
+        set_species_flag = SdjFlagForbidden_job_politician_@prev
+    } else = { remove_species_flag = SdjFlagForbidden_job_politician_@prev }
     if = {
         limit = { prev = { has_country_flag = SdjFlagTemplate3_Forbidden_job_noble } }
         set_species_flag = SdjFlagForbidden_job_noble_@prev
@@ -1916,9 +1916,9 @@ SdjEffectCopySpeciesJobRightSeparately = {
         set_species_flag = SdjFlagForbidden_job_high_priest_@root
     } else = { remove_species_flag = SdjFlagForbidden_job_high_priest_@root }
     if = {
-        limit = { prev = { has_species_flag = SdjFlagForbidden_job_administrator_@root } }
-        set_species_flag = SdjFlagForbidden_job_administrator_@root
-    } else = { remove_species_flag = SdjFlagForbidden_job_administrator_@root }
+        limit = { prev = { has_species_flag = SdjFlagForbidden_job_politician_@root } }
+        set_species_flag = SdjFlagForbidden_job_politician_@root
+    } else = { remove_species_flag = SdjFlagForbidden_job_politician_@root }
     if = {
         limit = { prev = { has_species_flag = SdjFlagForbidden_job_noble_@root } }
         set_species_flag = SdjFlagForbidden_job_noble_@root
@@ -2222,8 +2222,8 @@ SdjEffectSetJobPriority = {
             limit = { check_variable = { which = SdjVarTargetJobCode value = @SdjConstJobCode_job_high_priest } }
             event_target:SdjTargetCurrentConfigurated = { set_variable = { which = SdjVarJobPriority_job_high_priest value = SdjVarPriorityDummy } }
         } else_if = {
-            limit = { check_variable = { which = SdjVarTargetJobCode value = @SdjConstJobCode_job_administrator } }
-            event_target:SdjTargetCurrentConfigurated = { set_variable = { which = SdjVarJobPriority_job_administrator value = SdjVarPriorityDummy } }
+            limit = { check_variable = { which = SdjVarTargetJobCode value = @SdjConstJobCode_job_politician } }
+            event_target:SdjTargetCurrentConfigurated = { set_variable = { which = SdjVarJobPriority_job_politician value = SdjVarPriorityDummy } }
         } else_if = {
             limit = { check_variable = { which = SdjVarTargetJobCode value = @SdjConstJobCode_job_noble } }
             event_target:SdjTargetCurrentConfigurated = { set_variable = { which = SdjVarJobPriority_job_noble value = SdjVarPriorityDummy } }
@@ -2432,7 +2432,7 @@ SdjEffectSetCategoryAllJobPriority = {
         event_target:SdjTargetCurrentConfigurated = {
             set_variable = { which = SdjVarJobPriority_job_head_researcher value = SdjVarPriorityDummy }
             set_variable = { which = SdjVarJobPriority_job_high_priest value = SdjVarPriorityDummy }
-            set_variable = { which = SdjVarJobPriority_job_administrator value = SdjVarPriorityDummy }
+            set_variable = { which = SdjVarJobPriority_job_politician value = SdjVarPriorityDummy }
             set_variable = { which = SdjVarJobPriority_job_noble value = SdjVarPriorityDummy }
             set_variable = { which = SdjVarJobPriority_job_merchant value = SdjVarPriorityDummy }
             set_variable = { which = SdjVarJobPriority_job_executive value = SdjVarPriorityDummy }
@@ -2600,16 +2600,16 @@ SdjEffectCopyPriorityConfiguration = {
             change_variable = { which = SdjVarJobPriority_job_high_priest value = -1 }
             prev = { change_variable = { which = SdjVarPriorityDummy value = 1 } }
         }
-        prev = { set_variable = { which = SdjVarPriorityDummy value = SdjVarJobPriority_job_administrator } }
-        set_variable = { which = SdjVarJobPriority_job_administrator value = 0 }
+        prev = { set_variable = { which = SdjVarPriorityDummy value = SdjVarJobPriority_job_politician } }
+        set_variable = { which = SdjVarJobPriority_job_politician value = 0 }
         while = {
             limit = { prev = { check_variable = { which = SdjVarPriorityDummy value > 0.5 } } }
-            change_variable = { which = SdjVarJobPriority_job_administrator value = 1 }
+            change_variable = { which = SdjVarJobPriority_job_politician value = 1 }
             prev = { change_variable = { which = SdjVarPriorityDummy value = -1 } }
         }
         while = {
             limit = { prev = { check_variable = { which = SdjVarPriorityDummy value < -0.5 } } }
-            change_variable = { which = SdjVarJobPriority_job_administrator value = -1 }
+            change_variable = { which = SdjVarJobPriority_job_politician value = -1 }
             prev = { change_variable = { which = SdjVarPriorityDummy value = 1 } }
         }
         prev = { set_variable = { which = SdjVarPriorityDummy value = SdjVarJobPriority_job_noble } }
@@ -3803,7 +3803,7 @@ SdjEffectInitializeTemplate = {
             set_variable = { which = SdjVarJobPriority_job_corrupt_drone value = @SdjConstTemplate1_job_corrupt_drone }
             set_variable = { which = SdjVarJobPriority_job_head_researcher value = @SdjConstTemplate1_job_head_researcher }
             set_variable = { which = SdjVarJobPriority_job_high_priest value = @SdjConstTemplate1_job_high_priest }
-            set_variable = { which = SdjVarJobPriority_job_administrator value = @SdjConstTemplate1_job_administrator }
+            set_variable = { which = SdjVarJobPriority_job_politician value = @SdjConstTemplate1_job_politician }
             set_variable = { which = SdjVarJobPriority_job_noble value = @SdjConstTemplate1_job_noble }
             set_variable = { which = SdjVarJobPriority_job_merchant value = @SdjConstTemplate1_job_merchant }
             set_variable = { which = SdjVarJobPriority_job_executive value = @SdjConstTemplate1_job_executive }
@@ -3887,7 +3887,7 @@ SdjEffectInitializeTemplate = {
             set_variable = { which = SdjVarJobPriority_job_corrupt_drone value = @SdjConstTemplate2_job_corrupt_drone }
             set_variable = { which = SdjVarJobPriority_job_head_researcher value = @SdjConstTemplate2_job_head_researcher }
             set_variable = { which = SdjVarJobPriority_job_high_priest value = @SdjConstTemplate2_job_high_priest }
-            set_variable = { which = SdjVarJobPriority_job_administrator value = @SdjConstTemplate2_job_administrator }
+            set_variable = { which = SdjVarJobPriority_job_politician value = @SdjConstTemplate2_job_politician }
             set_variable = { which = SdjVarJobPriority_job_noble value = @SdjConstTemplate2_job_noble }
             set_variable = { which = SdjVarJobPriority_job_merchant value = @SdjConstTemplate2_job_merchant }
             set_variable = { which = SdjVarJobPriority_job_executive value = @SdjConstTemplate2_job_executive }
@@ -3971,7 +3971,7 @@ SdjEffectInitializeTemplate = {
             set_variable = { which = SdjVarJobPriority_job_corrupt_drone value = @SdjConstTemplate3_job_corrupt_drone }
             set_variable = { which = SdjVarJobPriority_job_head_researcher value = @SdjConstTemplate3_job_head_researcher }
             set_variable = { which = SdjVarJobPriority_job_high_priest value = @SdjConstTemplate3_job_high_priest }
-            set_variable = { which = SdjVarJobPriority_job_administrator value = @SdjConstTemplate3_job_administrator }
+            set_variable = { which = SdjVarJobPriority_job_politician value = @SdjConstTemplate3_job_politician }
             set_variable = { which = SdjVarJobPriority_job_noble value = @SdjConstTemplate3_job_noble }
             set_variable = { which = SdjVarJobPriority_job_merchant value = @SdjConstTemplate3_job_merchant }
             set_variable = { which = SdjVarJobPriority_job_executive value = @SdjConstTemplate3_job_executive }

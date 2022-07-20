@@ -81,11 +81,11 @@ country_event = {
     }
     
     option = {
-        name = SdjOptionForbid_job_administrator.name
-        #custom_tooltip = SdjOptionForbid_job_administrator.tooltip
+        name = SdjOptionForbid_job_politician.name
+        #custom_tooltip = SdjOptionForbid_job_politician.tooltip
         trigger = {
             hidden_trigger = {
-                event_target:SdjTargetSpeciesA = { NOT = { has_species_flag = SdjFlagForbidden_job_administrator_@root } }
+                event_target:SdjTargetSpeciesA = { NOT = { has_species_flag = SdjFlagForbidden_job_politician_@root } }
                 OR = {
                     always = yes
                     check_variable = { which = SdjVarMenuType value > 1.5 }
@@ -98,24 +98,24 @@ country_event = {
                 event_target:SdjTargetSpeciesA = {
                     set_species_flag = SdjFlagForbiddenSeparately_@root
                     set_species_flag = SdjFlagForbiddenFinely_@root
-                    set_species_flag = SdjFlagForbidden_job_administrator_@root
+                    set_species_flag = SdjFlagForbidden_job_politician_@root
                 }
             } else = {
                 every_owned_pop_species = {
                     limit = { is_same_species = event_target:SdjTargetSpeciesA }
                     set_species_flag = SdjFlagForbiddenSeparately_@root
                     set_species_flag = SdjFlagForbiddenFinely_@root
-                    set_species_flag = SdjFlagForbidden_job_administrator_@root
+                    set_species_flag = SdjFlagForbidden_job_politician_@root
                 }
             }
         }
     }
     option = {
-        name = SdjOptionAllow_job_administrator.name
-        #custom_tooltip = SdjOptionAllow_job_administrator.tooltip
+        name = SdjOptionAllow_job_politician.name
+        #custom_tooltip = SdjOptionAllow_job_politician.tooltip
         trigger = {
             hidden_trigger = {
-                event_target:SdjTargetSpeciesA = { has_species_flag = SdjFlagForbidden_job_administrator_@root }
+                event_target:SdjTargetSpeciesA = { has_species_flag = SdjFlagForbidden_job_politician_@root }
                 OR = {
                     always = yes
                     check_variable = { which = SdjVarMenuType value > 1.5 }
@@ -128,14 +128,14 @@ country_event = {
                 event_target:SdjTargetSpeciesA = {
                     set_species_flag = SdjFlagForbiddenSeparately_@root
                     set_species_flag = SdjFlagForbiddenFinely_@root
-                    remove_species_flag = SdjFlagForbidden_job_administrator_@root
+                    remove_species_flag = SdjFlagForbidden_job_politician_@root
                 }
             } else = {
                 every_owned_pop_species = {
                     limit = { is_same_species = event_target:SdjTargetSpeciesA }
                     set_species_flag = SdjFlagForbiddenSeparately_@root
                     set_species_flag = SdjFlagForbiddenFinely_@root
-                    remove_species_flag = SdjFlagForbidden_job_administrator_@root
+                    remove_species_flag = SdjFlagForbidden_job_politician_@root
                 }
             }
         }

@@ -73,13 +73,13 @@ SdjTriggerJobPriorityN_job_high_priest = {
         }
     }
 }
-SdjTriggerJobPriorityN_job_administrator = {
+SdjTriggerJobPriorityN_job_politician = {
     planet = {
         OR = {
-            NOT = { check_variable = { which = SdjVarJobPriority_job_administrator value > -0.5 } }
+            NOT = { check_variable = { which = SdjVarJobPriority_job_politician value > -0.5 } }
             has_planet_flag = SdjFlagEveryoneFired@owner
             AND = {
-                prev.species = { has_species_flag = SdjFlagForbidden_job_administrator_@prevprev.owner }
+                prev.species = { has_species_flag = SdjFlagForbidden_job_politician_@prevprev.owner }
                 NOT = { has_planet_flag = SdjFlagDeregulationOfJob@prev.owner }
             }
         }
@@ -877,10 +877,10 @@ SdjTriggerJobPriority0_job_high_priest = {
         
     }
 }
-SdjTriggerJobPriority0_job_administrator = {
+SdjTriggerJobPriority0_job_politician = {
     planet = {
         
-            NOT = { check_variable = { which = SdjVarJobPriority_job_administrator value > 0.5 } }
+            NOT = { check_variable = { which = SdjVarJobPriority_job_politician value > 0.5 } }
             
             
                 
@@ -1681,10 +1681,10 @@ SdjTriggerJobPriority1_job_high_priest = {
         
     }
 }
-SdjTriggerJobPriority1_job_administrator = {
+SdjTriggerJobPriority1_job_politician = {
     planet = {
         
-            check_variable = { which = SdjVarJobPriority_job_administrator value > 0.5 }
+            check_variable = { which = SdjVarJobPriority_job_politician value > 0.5 }
             
             
                 
@@ -2485,10 +2485,10 @@ SdjTriggerJobPriority2_job_high_priest = {
         
     }
 }
-SdjTriggerJobPriority2_job_administrator = {
+SdjTriggerJobPriority2_job_politician = {
     planet = {
         
-            check_variable = { which = SdjVarJobPriority_job_administrator value > 1.5 }
+            check_variable = { which = SdjVarJobPriority_job_politician value > 1.5 }
             
             
                 
@@ -3289,10 +3289,10 @@ SdjTriggerJobPriority3_job_high_priest = {
         
     }
 }
-SdjTriggerJobPriority3_job_administrator = {
+SdjTriggerJobPriority3_job_politician = {
     planet = {
         
-            check_variable = { which = SdjVarJobPriority_job_administrator value > 2.5 }
+            check_variable = { which = SdjVarJobPriority_job_politician value > 2.5 }
             
             
                 
@@ -4093,10 +4093,10 @@ SdjTriggerJobPriority4_job_high_priest = {
         
     }
 }
-SdjTriggerJobPriority4_job_administrator = {
+SdjTriggerJobPriority4_job_politician = {
     planet = {
         
-            check_variable = { which = SdjVarJobPriority_job_administrator value > 3.5 }
+            check_variable = { which = SdjVarJobPriority_job_politician value > 3.5 }
             
             
                 
@@ -4897,10 +4897,10 @@ SdjTriggerJobPriority5_job_high_priest = {
         
     }
 }
-SdjTriggerJobPriority5_job_administrator = {
+SdjTriggerJobPriority5_job_politician = {
     planet = {
         
-            check_variable = { which = SdjVarJobPriority_job_administrator value > 4.5 }
+            check_variable = { which = SdjVarJobPriority_job_politician value > 4.5 }
             
             
                 
@@ -5701,10 +5701,10 @@ SdjTriggerJobPriority6_job_high_priest = {
         
     }
 }
-SdjTriggerJobPriority6_job_administrator = {
+SdjTriggerJobPriority6_job_politician = {
     planet = {
         
-            check_variable = { which = SdjVarJobPriority_job_administrator value > 5.5 }
+            check_variable = { which = SdjVarJobPriority_job_politician value > 5.5 }
             
             
                 
@@ -6505,10 +6505,10 @@ SdjTriggerJobPriority7_job_high_priest = {
         
     }
 }
-SdjTriggerJobPriority7_job_administrator = {
+SdjTriggerJobPriority7_job_politician = {
     planet = {
         
-            check_variable = { which = SdjVarJobPriority_job_administrator value > 6.5 }
+            check_variable = { which = SdjVarJobPriority_job_politician value > 6.5 }
             
             
                 
@@ -7309,10 +7309,10 @@ SdjTriggerJobPriority8_job_high_priest = {
         
     }
 }
-SdjTriggerJobPriority8_job_administrator = {
+SdjTriggerJobPriority8_job_politician = {
     planet = {
         
-            check_variable = { which = SdjVarJobPriority_job_administrator value > 7.5 }
+            check_variable = { which = SdjVarJobPriority_job_politician value > 7.5 }
             
             
                 
@@ -8113,10 +8113,10 @@ SdjTriggerJobPriority9_job_high_priest = {
         
     }
 }
-SdjTriggerJobPriority9_job_administrator = {
+SdjTriggerJobPriority9_job_politician = {
     planet = {
         
-            check_variable = { which = SdjVarJobPriority_job_administrator value > 8.5 }
+            check_variable = { which = SdjVarJobPriority_job_politician value > 8.5 }
             
             
                 
